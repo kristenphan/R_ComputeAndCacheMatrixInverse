@@ -1,12 +1,12 @@
-## the two functions below leverages R's lexical scoping to optimize the computation of inverse matrix
-## 'makeCacheMatrix' function creates a special object that holds a matrix and its inverse for caching purpose
-## 'cacheSolve' function attempts to retrieve the inverse matrix from the passed in object x creately previoused using 'makeCacheMatrix'
+## the two functions below leverage R's lexical scoping to optimize the computation of inverse matrix
+## 'makeCacheMatrix' function creates a special object that holds a matrix and its inverse for caching purposes
+## 'cacheSolve' function attempts to retrieve the inverse matrix from the passed in object x which has been creately previoused using 'makeCacheMatrix'
 ## if no cache is found, this function computes the inverse matrix and saves it in object x
 
 
 
-## this function creates an object that stores matrix x and its inverse
-## the object supports 4 functions:
+## this function returns an object that stores matrix x and its inverse
+## the object x supports 4 functions:
 ## x$set(): replace matrix x with a new matrix and reset the inverse matrix
 ## x$get(): return matrix x
 ## x$setinv(): set the inverse to the passed in argument 'inverse'
